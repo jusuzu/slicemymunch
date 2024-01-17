@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slice Is My Munch</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        button {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: red;
+            color: black;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #hiddenContent {
+            display: none;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://cdn.discordapp.com/attachments/1142482529979465739/1197206855278149662/FeSRJS4.mp3?ex=65ba6cc5&is=65a7f7c5&hm=c5c6979b9739b30ae5ed35311c957f7c15bac9fb8a28bf6ac4c311211948cb4a&" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button onclick="revealImages()">You thought I was feeling you?</button>
+
+    <div id="hiddenContent">
+        <img src="https://media.discordapp.net/attachments/1142482529979465739/1197205537817903235/UZsVF59.png?ex=65ba6b8b&is=65a7f68b&hm=4a088a98b6037f80a8a8a5faf5746e640dce3c1256ae2a1beb5cd731e307fd75&=&format=webp&quality=lossless&width=768&height=662" alt="Image 1">
+        <img src="https://media.discordapp.net/attachments/1142482529979465739/1197209480455270542/VtXUHvl.png?ex=65ba6f37&is=65a7fa37&hm=3e2d7bf3f3722fde964a521613656311936d0bd9e31b4e5215e2e5aeea8ed995&=&format=webp&quality=lossless&width=962&height=662" alt="Image 2">
+        <img src="https://media.discordapp.net/attachments/1142482529979465739/1197209656309850243/EMNhRA9.png?ex=65ba6f61&is=65a7fa61&hm=10c928ca778f2744023a3bd49eb627a1248e610773ad0f10e8eb3ab7fde6a461&=&format=webp&quality=lossless&width=610&height=320" alt="Image 3">
+        <img src="https://images-ext-2.discordapp.net/external/9wVkRWjaC8pLYbYuarnNNxg-G257ACWAICoJYvpzwmo/%3F9370764/https/us.rule34.xxx/images/3328/4c3e325644a84cd28d78e6a6fcf7ae1d5e10f633.jpg?format=webp&width=662&height=662" alt="Image 4">
+    </div>
+
+    <script>
+        function revealImages() {
+            document.getElementById('hiddenContent').style.display = 'block';
+            document.querySelector('button').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
